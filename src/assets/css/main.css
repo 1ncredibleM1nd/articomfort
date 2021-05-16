@@ -1,0 +1,152 @@
+@import "~animate.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+@font-face {
+    font-family: 'Neutraface Display Titling';
+    src: url('../fonts/NeutraDisplay-Titling') format('otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --green-color: #0B5C0B;
+    --orange-color: #FC6805;
+    --grey-color: #626262;
+}
+h1{
+    font-family: "Neutraface Display Titling", serif;
+    font-size: 48px;
+    line-height: 137.5%;
+}
+h2{
+    font-family: "Neutraface Display Titling", serif;
+    font-size: 36px;
+    color:
+    line-height: 137.5%;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url("../img/bcgMain.png") center no-repeat;
+    background-size: cover;
+}
+.header-nav{
+    padding-left: 140px;
+    padding-top: 45px;
+    padding-right: 140px;
+    display: flex;
+}
+section{
+    margin-top: 80px;
+}
+.navbar{
+    width: 80%;
+    margin-left: 20%;
+
+}
+.navbar-item{
+    color: white;
+    list-style: none;
+    font-size: 24px;
+}
+.navbar-item:hover{
+    color: #BABABA;
+    transition: .4s;
+}
+.navbar-link{
+    text-decoration: none;
+}
+.header-title{
+    color: white;
+}
+.header-description{
+    width: 645px;
+    margin-top: 10%;
+}
+.button-get{
+    padding: 15px 95px;
+    background: none;
+    border: 1px solid white;
+    font-size: 24px;
+    color: white;
+    border-radius: 31px;
+    margin-top: 60px;
+    font-weight: 600;
+}
+.section-header{
+    color: var(--green-color);
+}
+.section-header__orange{
+    color: var( --orange-color);
+}
+.address{
+    padding-top: 15px;
+    border-top: 1px solid #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+}
+.address__column__title{
+    color: var(--grey-color);
+    font-size: 18px;
+}
+.address__column__description{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer{
+    background: #1F1F1F;
+    padding-top: 35px;
+    padding-bottom: 20px;
+
+}
+
+.footer__navigation{
+    display: flex;
+    align-items: center;
+
+}
+.footer__navigation-links{
+    display: flex;
+    margin-left: 5%;
+
+}
+.navbar__navigation__item{
+    color: white;
+    font-size: 24px;
+    list-style: none;
+}
+.navbar__navigation__item a {
+    margin-right: 25px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.navbar__navigation__item a:hover{
+    color: #626262;
+}
+.more-questions{
+    color: white;
+}
+.more-questions__title{
+    font-weight: 600;
+    font-size: 24px;
+}
+.more-questions__descr{
+    font-size: 18px;
+}
+.footer-btn{
+    color: white;
+    background: none;
+    border: 1px solid white;
+    border-radius: 31px;
+    padding: 6px 60px;
+}
