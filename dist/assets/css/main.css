@@ -1,4 +1,5 @@
 @import "~animate.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 
@@ -12,7 +13,9 @@
 html{
     font-family: 'Montserrat', sans-serif;
 }
-
+p{
+    font-family: Montserrat;
+}
 :root{
     --green-color: #0B5C0B;
     --orange-color: #FC6805;
@@ -22,12 +25,16 @@ h1{
     font-family: "Neutraface Display Titling", serif;
     font-size: 48px;
     line-height: 137.5%;
+
 }
 h2{
     font-family: "Neutraface Display Titling", serif;
     font-size: 36px;
-    color:
+
     line-height: 137.5%;
+}
+h3{
+    font-family: Montserrat;
 }
 header{
     width: 100%;
@@ -82,10 +89,51 @@ section{
 }
 .section-header{
     color: var(--green-color);
+    margin-bottom: 50px;
 }
 .section-header__orange{
     color: var( --orange-color);
 }
+
+/*Projects*/
+.catalog-item{
+    margin-top: 45px;
+    position: relative;
+}
+.discription, .discription-big{
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 1;
+    top:90%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    padding: 15px 40px;
+    width: 80%;
+    background:#ffff ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.discription-big{
+    top: 95%;
+    left: 15%;
+}
+
+.discription-link{
+    color: #1F1F1F;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.discription-link:hover{
+    color:black;
+    font-weight: 700;
+
+}
+
+/*Map*/
 .address{
     padding-top: 15px;
     border-top: 1px solid #C4C4C4;
@@ -102,6 +150,8 @@ section{
     font-weight: 500;
 }
 
+
+/*Footer*/
 footer{
     background: #1F1F1F;
     padding-top: 35px;
@@ -149,4 +199,71 @@ footer{
     border: 1px solid white;
     border-radius: 31px;
     padding: 6px 60px;
+}
+
+.testimonials-item{
+    margin-bottom: 40px;
+    margin-right: 40px;
+    width: 500px;
+    height: auto;
+    box-sizing: border-box;
+    padding:  12px 20px;
+    background: #FFFFFF;
+    box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.15);
+}
+.author-name{
+    font-size: 24px;
+    font-weight: 500;
+}
+.author__testimonial{
+    font-size: 18px;
+    font-style: italic;
+}
+
+.btn-build{
+    appearance: none;
+    font-family: Montserrat ;
+    height: 2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: var(--green-color);
+    border: 1px solid var(--green-color);
+    background: none;
+    border-radius: 1.5em;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.popular-cost{
+    padding: 0;
+    color: var(--green-color);
+    font-size: 24px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.popular_value-cost{
+    padding: 0;
+    font-size: 36px;
+    color: var(--green-color);
+}
+.popular-name{
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.popular__params{
+    font-size: 24px;
+    border: 1px solid var(--orange-color);
+    padding: 5px 10px;
+    font-weight: 600;
+}
+.popular__plain-text{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
 }

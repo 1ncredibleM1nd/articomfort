@@ -25,6 +25,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "glider-js": "^1.7.7"
   }
 }
